@@ -10,19 +10,31 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Editor from './components/Editor';
 import './App.css'
+import htmlIcon from './assets/htmlIcon.png'
+import cssIcon from './assets/cssIcon.png'
+import jsIcon from './assets/jsIcon.png'
+
 
 function App() {
-  
+ 
   return (
     <>
       <Home/>
       <div className='editorPart'>
-       <Editor/>
-
-
-       <Editor/>
+       <Editor
        
-       <Editor/>
+       icon={htmlIcon}
+       />
+
+
+       <Editor
+      
+       icon={cssIcon}
+       />
+       
+       <Editor
+             icon={jsIcon}
+      />
        </div>
        <div className='output'>
  

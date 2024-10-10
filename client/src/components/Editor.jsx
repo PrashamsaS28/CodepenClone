@@ -10,7 +10,7 @@ import { IoChevronDown } from "react-icons/io5";
 import '../App.css'
 
 const Editor = (props) => {
-    const {language, value, onChange}=props
+    const {icon,language, value, onChange}=props
 
     function handleChange(editing, data, value){
         onChange(value)
@@ -19,9 +19,9 @@ const Editor = (props) => {
     return (
     <div className='editorContainer'>
         <div className='title' style={{color:'#AAAEBC', fontSize:"16.5px"}}>
-           <h1>HTML</h1>
-           
-            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 340.6px',padding:'2px 7px', height:'20px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
+          <img src= {icon} style={{height:'10px', width:'10px'}}/>
+        
+            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 301px',padding:'2px 7px', height:'20px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
             <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px', height:'20px'}}><IoChevronDown style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
        
            
@@ -33,6 +33,7 @@ const Editor = (props) => {
     className='editorSection'
     options={{
         lineWrapping:true,
+        lint:true,
         mode:language,
        theme:"",
         lineNumbers:true,
