@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       className="card-footer"
-      style={{ marginTop:'14.9%',backgroundColor: "#2C303A", padding: "5px 10px" }}
+      style={{ backgroundColor: "#2C303A", padding: "5px 10px" }}
     >
       <form className="form-inline my-1 my-lg-0">
         <button

@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../assets/codepenlogo2.png";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { BsFillPencilFill } from "react-icons/bs";
 import { IoIosCloud } from "react-icons/io";
 import { IoSettingsSharp } from "react-icons/io5";
-import { RiSlideshowView } from "react-icons/ri";
+
 import { MdViewSidebar } from "react-icons/md";
 const Navbar = () => {
   return (

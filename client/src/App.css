@@ -1,9 +1,10 @@
 .editor{
   display: flex;
-
+background-color: black;
 
 }
 .editor-container{
   flex-grow: 1;
   margin: 10px;
 }
+

@@ -11,14 +11,24 @@ import Footer from './components/Footer';
 import Editor from './components/Editor';
 
 function App() {
+ 
 
   return (
     <>
       <Home/>
       <div className='editor'>
        <Editor/>
+
+
        <Editor/>
+       
        <Editor/>
+       </div>
+       <div className='output'>
+ 
+       
+ 
+        
        </div>
       <Footer/>
     </>
