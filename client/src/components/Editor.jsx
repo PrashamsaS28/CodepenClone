@@ -18,10 +18,11 @@ const Editor = (props) => {
 
     return (
     <div className='editorContainer'>
-        <div className='titleName'>
-            
-            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px'}}/></button>
-            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px', height:'6%'}}><IoChevronDown style={{color:'white', backgroundColor:"#444857", fontSize:'12px'}}/></button>
+        <div className='title' style={{color:'#AAAEBC', fontSize:"16.5px"}}>
+           <h1>HTML</h1>
+           
+            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 340.6px',padding:'2px 7px', height:'20px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
+            <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px', height:'20px'}}><IoChevronDown style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
        
            
         
