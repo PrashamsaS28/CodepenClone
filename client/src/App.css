@@ -1,10 +1,22 @@
-.editor{
+.editorPart{
   display: flex;
 background-color: black;
 
 }
-.editor-container{
+.editorContainer{
   flex-grow: 1;
   margin: 10px;
+  max-width: 420px;
 }
+
+.CodeMirror{
+  background-color:#1f2024 !important;
+  color: yellow !important;
+}
+
+.CodeMirror-gutters{
+  background-color: #1f2024 !important;
+ border-right: #222222 !important;
+}
+
 

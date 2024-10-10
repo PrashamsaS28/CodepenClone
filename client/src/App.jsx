@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import './App.css'
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,14 +9,14 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Editor from './components/Editor';
+import './App.css'
 
 function App() {
  
-
   return (
     <>
       <Home/>
-      <div className='editor'>
+      <div className='editorPart'>
        <Editor/>
 
 
@@ -26,7 +26,13 @@ function App() {
        </div>
        <div className='output'>
  
+         <iframe title='output'
+         sandbox="allow-scripts"
        
+         width="100%"
+         height="100%" style={{height:'124.7px'}}
+         />
+ 
  
         
        </div>
