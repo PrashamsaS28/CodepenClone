@@ -16,25 +16,35 @@ import jsIcon from './assets/jsIcon.png'
 
 
 function App() {
- 
+  const[html,sethtml]=useState('')
+  const[css,setcss]=useState('')
+  const[js,setjs]=useState('')
+
   return (
     <>
       <Home/>
       <div className='editorPart'>
        <Editor
-       
+       language="xml"
        icon={htmlIcon}
-       />
+       languageName="HTML"
+       value={html}
+       onChange={sethtml}/>
 
 
        <Editor
-      
+       language="css"
        icon={cssIcon}
-       />
+       languageName="CSS"
+       value={css}
+       onChange={setcss}/>
        
        <Editor
-             icon={jsIcon}
-      />
+       language="javascript"
+       icon={jsIcon}
+       languageName="JS"
+       value={js}
+       onChange={setjs}/>
        </div>
        <div className='output'>
  
