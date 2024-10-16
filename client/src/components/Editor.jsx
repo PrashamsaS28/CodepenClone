@@ -18,9 +18,9 @@ const Editor = (props) => {
 
     return (
     <div className='editorContainer' >
-        <div className='title' style={{display:'flex',color:'#AAAEBC', fontSize:"16.5px", backgroundColor:'#1f2024', alignItems:'center',justifyContent:'space-between', maxWidth:'85px',flexGrow:1}}>
+        <div className='title' style={{display:'flex',alignItems:'center',justifyContent:'space-between', flexGrow:1}}>
           
-          <div style={{display:'flex', alignItems:'center', flexGrow:1}}>
+          <div style={{display:'flex', alignItems:'center', flexGrow:1, maxWidth:'85px',color:'#AAAEBC', fontSize:"16.5px", backgroundColor:'#1f2024'}}>
           <img src= {icon} style={{height:'18.5px', width:'18.5px', margin:'5px 6.5px 5px 10px'}}/>
         <span className='titleName' style={{fontWeight:'bold'}}>{languageName} </span>
         </div>
@@ -28,8 +28,8 @@ const Editor = (props) => {
        
         <div style={{display:'flex', marginLeft:'auto'}}>
            
-           <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 265px',padding:'2px 7px', height:'20px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
-           <button style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px', height:'20px'}}><IoChevronDown style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-7.5px)'}}/></button>
+           <button className='btn btn' style={{backgroundColor:"#444857",margin:'0px 3px 0px 265px',padding:'2px 7px', height:'17px'}}><IoMdSettings style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-6px)'}}/></button>
+           <button className='btn btn' style={{backgroundColor:"#444857",margin:'0px 3px 0px 0px', padding:'2px 7px', height:'17px'}}><IoChevronDown style={{color:'white', backgroundColor:"#444857", fontSize:'12px',transform:'translateY(-6px)'}}/></button>
       
            </div>  
             
