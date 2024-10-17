@@ -10,9 +10,9 @@ import { IoChevronDown } from "react-icons/io5";
 import '../App.css'
 
 const Editor = (props) => {
-    const {languageName,icon,language, value, onChange}=props
+    const {languageName,icon,language, value, onChange, color,paddingBottom, paddingTop}=props
 
-    function handleChange(editing, data, value){
+    function handleChange(editing, data,value){
         onChange(value)
     }
 
@@ -21,7 +21,7 @@ const Editor = (props) => {
         <div className='title' style={{display:'flex',alignItems:'center',justifyContent:'space-between', flexGrow:1}}>
           
           <div style={{display:'flex', alignItems:'center', flexGrow:1, maxWidth:'85px',color:'#AAAEBC', fontSize:"16.5px", backgroundColor:'#1f2024'}}>
-          <img src= {icon} style={{height:'18.5px', width:'18.5px', margin:'5px 6.5px 5px 10px'}}/>
+          <span className='icon' style={{color:'black',display:'flex', justifyContent:'center',height:'18.5px', width:'18.5px', backgroundColor:color,margin:'5px 6.5px 5px 10px', alignItems:'center',borderRadius:'5px', paddingBottom:paddingBottom,paddingTop:paddingTop}}>{icon}</span>
         <span className='titleName' style={{fontWeight:'bold'}}>{languageName} </span>
         </div>
          

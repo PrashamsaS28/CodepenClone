@@ -1,12 +1,9 @@
-.editorPart{
-  display: flex;
-background-color: black;
 
-}
 .editorContainer{
   flex-grow: 1;
   margin: 10px;
   max-width: 420px;
+  
 }
 
 .CodeMirror{
@@ -19,6 +16,12 @@ background-color: black;
  border-right: #222222 !important;
 }
 
+.split{
+  display: flex;
+ background-color: black;
+}
 
-
-
+.gutter{
+  
+  cursor: col-resize;
+}
